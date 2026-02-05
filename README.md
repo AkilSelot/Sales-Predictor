@@ -40,3 +40,25 @@ This repository serves as a portfolio example of practical Python-based data ana
 
 ## 📁 Repository Structure
 
+Sales-Predictor/
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── src/
+│ ├── data_cleaning.py
+│ └── sales_prediction.py
+│
+├── README.md
+
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/AkilSelot/Sales-Predictor.git
+
