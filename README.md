@@ -1,16 +1,42 @@
-# Sales Predictor
-A Python project that forecasts sales using historical retail data.
+# 📈 Sales Predictor
 
-## What’s included:
-- Python scripts for data cleaning, transformation, and forecasting
-- Sample datasets (CSV files)
-- Predictive models for sales trends
+A professional Python-based project that forecasts retail sales using historical data and basic machine learning techniques.
 
-## Usage:
-1. Open the Python scripts in any IDE (VS Code, PyCharm, etc.).
-2. Run `data_cleaning.py` to prepare the dataset.
-3. Run `sales_prediction.py` to generate forecasts.
-4. Modify scripts or datasets as needed.
+This project demonstrates data cleaning, transformation, and predictive modeling for business decision support.
 
-## Author
-Akil Selot
+---
+
+## 🔍 Project Overview
+
+The goal of this project is to analyze historical retail sales data and build models that can:
+
+- Predict future sales trends  
+- Identify patterns in sales behavior  
+- Support data-driven business planning  
+
+This repository serves as a portfolio example of practical Python-based data analysis and forecasting.
+
+---
+
+## ✨ Key Features
+
+- Data cleaning and preprocessing  
+- Feature engineering  
+- Sales trend prediction  
+- Modular Python scripts  
+- Expandable model design  
+
+---
+
+## 🛠 Tools & Technologies
+
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- CSV datasets  
+
+---
+
+## 📁 Repository Structure
+
