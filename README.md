@@ -1,4 +1,4 @@
-# 📈 Sales Predictor
+# 🐍 Sales Predictor
 
 A professional Python-based project that forecasts retail sales using historical data and basic machine learning techniques.
 
