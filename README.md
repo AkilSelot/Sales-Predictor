@@ -50,52 +50,43 @@ Sales-Predictor/
 │   └── processed/          # Cleaned/processed datasets
 │       └── cleaned_sales_data.csv
 │
-├── graphs/                 # All generated plots
+├── graphs/                 # Output graphs from predictions
 │   ├── sales_over_time.png
-│   ├── sales_histogram.png
-│   └── sales_cumulative.png
+│   ├── sales_distribution.png
+│   └── cumulative_sales.png
 │
 ├── src/
 │   ├── data_cleaning.py    # Script for cleaning and preprocessing
 │   ├── sales_prediction.py # Script for building and evaluating ML model
-│   └── plot_all.py         # Script for generating all plots
+│   └── plot_sales.py       # Optional: script for additional plots
 │
 ├── README.md
 └── requirements.txt
 
 ---
 
-## 📊 Sample Sales Data (Clickable)
+## 📊 Sample Sales Data (Click to View)
 
-You can click the link below to open the cleaned CSV file directly in GitHub:
+The cleaned sales data is available here. Click the link to open the CSV file in GitHub:
 
-[**Cleaned Sales Data (CSV)**](data/processed/cleaned_sales_data.csv)
-
-Here is a preview of the dataset:
-
-| Date       | Sales |
-|------------|-------|
-| 2025-01-01 | 100   |
-| 2025-01-02 | 115   |
-| 2025-01-03 | 108   |
+[🔹 Open Cleaned Sales Data](data/processed/cleaned_sales_data.csv)
 
 ---
 
-## 📊 Example Output Graphs (Clickable)
+## 📈 Example Output Graphs (Click to View)
 
-After running the prediction scripts, the following graphs are saved in `graphs/`:
+After running the prediction scripts, the following graphs are saved in `graphs/`. Click to open each graph:
 
-### 1️⃣ Sales Over Time
-[View Sales Over Time](graphs/sales_over_time.png)  
-![Sales Over Time](graphs/sales_over_time.png)
+1️⃣ **Sales Over Time**  
+[🔹 View Sales Over Time Graph](graphs/sales_over_time.png)
 
-### 2️⃣ Sales Distribution
-[View Sales Distribution](graphs/sales_histogram.png)  
-![Sales Distribution](graphs/sales_histogram.png)
+2️⃣ **Sales Distribution**  
+[🔹 View Sales Distribution Graph](graphs/sales_distribution.png)
 
-### 3️⃣ Cumulative Sales
-[View Cumulative Sales](graphs/sales_cumulative.png)  
-![Cumulative Sales](graphs/sales_cumulative.png)
+3️⃣ **Cumulative Sales**  
+[🔹 View Cumulative Sales Graph](graphs/cumulative_sales.png)
+
+> **Note:** Nothing is previewed on the README; users need to click to view each file.
 
 ---
 
@@ -106,7 +97,7 @@ After running the prediction scripts, the following graphs are saved in `graphs/
 ```bash
 git clone https://github.com/AkilSelot/Sales-Predictor.git
 cd Sales-Predictor
-Create a virtual environment and activate it:
+Create and activate a virtual environment:
 
 python -m venv venv
 venv\Scripts\activate   # Windows
@@ -118,21 +109,19 @@ Run Python scripts:
 
 Data Cleaning: cleans raw sales data and saves it to data/processed/
 
-python src\data_cleaning.py
-Sales Prediction: trains ML model, outputs predicted sales, and saves graphs
+python src/data_cleaning.py
+Sales Prediction: trains ML model and outputs predicted sales, saving graphs to graphs/
 
-python src\sales_prediction.py
-Generate All Plots: creates multiple example plots (sales over time, histogram, cumulative)
-
-python src\plot_all.py
+python src/sales_prediction.py
 💡 Notes
 Replace the CSV dataset with your own sales data for testing.
 
-The Python scripts are modular — you can easily improve the model or add new features.
+Python scripts are modular — you can easily improve the model or add new features.
+
+ML model can be replaced with other algorithms as needed.
 
 Example graphs are saved in graphs/ folder as PNG files.
 
-ML model can be replaced with other algorithms if needed.
-
 👤 Author
 Akil Selot
+Data Analyst
