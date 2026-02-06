@@ -42,26 +42,66 @@ This repository serves as a **portfolio example** of practical Python-based data
 
 ## 📁 Repository Structure
 
-Sales-Predictor/
+Sales-Predictor
+
+
 │
-├── data/
-│   ├── raw/                # Original datasets
+
+
+├── data
+
+
+│   ├── raw
+
+
 │   │   └── sales_data.csv
-│   └── processed/          # Cleaned/processed datasets
+
+
+│   └── processed
+
+
 │       └── cleaned_sales_data.csv
+
+
 │
-├── graphs/                 # Output graphs from predictions
+
+
+├── graphs
+
+
 │   ├── sales_over_time.png
+
+
 │   ├── sales_distribution.png
+
+
 │   └── cumulative_sales.png
+
+
 │
-├── src/
-│   ├── data_cleaning.py    # Script for cleaning and preprocessing
-│   ├── sales_prediction.py # Script for building and evaluating ML model
-│   └── plot_sales.py       # Optional: script for additional plots
+
+
+├── src
+
+
+│   ├── data_cleaning.py   
+
+
+│   ├── sales_prediction.py
+
+
+│   └── plot_sales.py       
+
+
 │
+
+
 ├── README.md
+
+
 └── requirements.txt
+
+
 
 ---
 
