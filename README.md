@@ -1,8 +1,8 @@
 # 🐍 Sales Predictor
 
-A professional Python-based project that forecasts retail sales using historical data and basic machine learning techniques.
+A professional Python-based project that forecasts retail sales using historical data and machine learning techniques.
 
-This project demonstrates data cleaning, transformation, and predictive modeling for business decision support.
+This project demonstrates data cleaning, transformation, visualization, and predictive modeling to support business decision-making.
 
 ---
 
@@ -14,7 +14,7 @@ The goal of this project is to analyze historical retail sales data and build mo
 - Identify patterns in sales behavior  
 - Support data-driven business planning  
 
-This repository serves as a portfolio example of practical Python-based data analysis and forecasting.
+This repository serves as a **portfolio example** of practical Python-based data analysis and forecasting.
 
 ---
 
@@ -23,8 +23,8 @@ This repository serves as a portfolio example of practical Python-based data ana
 - Data cleaning and preprocessing  
 - Feature engineering  
 - Sales trend prediction  
-- Modular Python scripts  
-- Expandable model design  
+- Modular Python scripts for easy extension  
+- Expandable model design for future improvements  
 
 ---
 
@@ -34,6 +34,7 @@ This repository serves as a portfolio example of practical Python-based data ana
 - Pandas  
 - NumPy  
 - Scikit-learn  
+- Matplotlib  
 - CSV datasets  
 
 ---
@@ -41,27 +42,17 @@ This repository serves as a portfolio example of practical Python-based data ana
 ## 📁 Repository Structure
 
 Sales-Predictor/
-
 │
-
 ├── data/
-
-│ ├── raw/
-
-│ └── processed/
-
+│ ├── raw/ # Original datasets
+│ └── processed/ # Cleaned/processed datasets
 │
-
 ├── src/
-
-│ ├── data_cleaning.py
-
-│ └── sales_prediction.py
-
+│ ├── data_cleaning.py # Script for cleaning and preprocessing
+│ └── sales_prediction.py # Script for building and evaluating the model
 │
-
 ├── README.md
-
+└── requirements.txt
 
 
 ---
@@ -72,4 +63,37 @@ Sales-Predictor/
 
 ```bash
 git clone https://github.com/AkilSelot/Sales-Predictor.git
+Navigate into the project folder:
 
+cd Sales-Predictor
+Create a virtual environment and activate it:
+
+python -m venv venv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate   # Mac/Linux
+Install required packages:
+
+pip install -r requirements.txt
+🐍 Run Python Scripts
+Run Data Cleaning – cleans raw sales data and saves it to data/processed/
+
+Run Sales Prediction – trains a model and outputs predicted sales
+
+Clicking these links on GitHub opens the script, so users can view the code directly.
+
+📊 View Data Table
+Click here to view the cleaned sales data
+
+This will open the CSV as a table directly in GitHub.
+
+📈 Example Output
+Cleaned data saved in data/processed/
+
+Predicted sales plotted using Matplotlib
+
+Model evaluation metrics displayed in the console (e.g., MAE)
+
+💡 Notes
+You can replace the CSV dataset with your own sales data for testing
+
+The scripts are modular — you can easily improve the model or add new features
