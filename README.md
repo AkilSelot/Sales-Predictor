@@ -74,17 +74,18 @@ venv\Scripts\activate   # Windows
 Install required packages:
 
 pip install -r requirements.txt
-🐍 Run Python Scripts
+🐍 Python Scripts (Clickable)
 Run Data Cleaning – cleans raw sales data and saves it to data/processed/
 
 Run Sales Prediction – trains a model and outputs predicted sales
 
-Clicking these links on GitHub opens the script so users can view the code directly.
+Clicking these links on GitHub opens the script code directly.
 
-📊 View Data Table
-Click here to view the cleaned sales data
+📊 Cleaned Sales Data (Clickable)
+Click the table below to view the full cleaned sales dataset in GitHub:
 
-This opens the CSV as a table directly in GitHub.
+
+✅ Screenshot is clickable — opens the CSV as a live table on GitHub.
 
 📈 Example Output
 Cleaned data saved in data/processed/
@@ -94,7 +95,6 @@ Predicted sales plotted using Matplotlib
 Model evaluation metrics displayed in the console (e.g., MAE)
 
 💡 Notes
-You can replace the CSV dataset with your own sales data for testing
+Replace the CSV dataset with your own sales data for testing
 
-The scripts are modular — you can easily improve the model or add new features
-
+Python scripts are modular — easy to extend or improve
