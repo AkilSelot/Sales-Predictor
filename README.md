@@ -121,7 +121,7 @@ After running the prediction scripts, the following graphs are saved in `graphs/
 [🔹 View Sales Over Time Graph](graphs/sales_over_time.png)
 
 2️⃣ **Sales Distribution**  
-[🔹 View Sales Distribution Graph](graphs/sales_distribution.png)
+[🔹 View Sales Distribution Graph](graphs/sales_histogram.png)
 
 3️⃣ **Cumulative Sales**  
 [🔹 View Cumulative Sales Graph](graphs/sales_cumulative.png)
