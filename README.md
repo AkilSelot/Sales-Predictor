@@ -59,7 +59,7 @@ Sales-Predictor/
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/AkilSelot/Sales-Predictor.git
@@ -79,12 +79,12 @@ Run Data Cleaning – cleans raw sales data and saves it to data/processed/
 
 Run Sales Prediction – trains a model and outputs predicted sales
 
-Clicking these links on GitHub opens the script, so users can view the code directly.
+Clicking these links on GitHub opens the script so users can view the code directly.
 
 📊 View Data Table
 Click here to view the cleaned sales data
 
-This will open the CSV as a table directly in GitHub.
+This opens the CSV as a table directly in GitHub.
 
 📈 Example Output
 Cleaned data saved in data/processed/
@@ -97,3 +97,4 @@ Model evaluation metrics displayed in the console (e.g., MAE)
 You can replace the CSV dataset with your own sales data for testing
 
 The scripts are modular — you can easily improve the model or add new features
+
