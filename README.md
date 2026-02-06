@@ -1,41 +1,52 @@
 # 🐍 Sales Predictor
 
-A Python-based project that forecasts retail sales using historical data and machine learning.  
-This project demonstrates **data cleaning, feature engineering, visualization, and predictive modeling**.
+A professional Python-based project that forecasts retail sales using historical data and machine learning.  
+
+This repository showcases an **interactive Python project** with preprocessed datasets, predictive models, and example outputs.
 
 ---
 
 ## 🔍 Project Overview
 
-The goal of this project is to:
+The goal of this project is to analyze retail sales data to:
 
-- Analyze historical retail sales data  
-- Build ML models to predict future sales trends  
-- Identify patterns in sales behavior  
+- Predict future sales trends  
+- Identify sales patterns  
 - Support data-driven business planning  
+- Explore historical performance at a glance  
 
-This repository serves as a **portfolio example** of practical Python-based data analysis and forecasting.
+This project serves as a **portfolio example** of Python-based data analysis and machine learning.
 
 ---
 
 ## ✨ Key Features
 
 - Data cleaning and preprocessing with Pandas  
-- Feature engineering for better predictions  
+- Feature engineering for better model accuracy  
 - Sales trend prediction using Scikit-learn  
-- Visualizations with Matplotlib  
-- Modular Python scripts for easy extension  
+- Visualization of sales trends with Matplotlib  
+- Modular and reusable Python scripts  
+- Example dataset included  
 
 ---
 
-## 🛠 Tools & Technologies
+## 📊 View Cleaned Sales Data
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Matplotlib  
-- CSV datasets  
+Click below to view the **cleaned sales data**:
+
+[![View Cleaned Sales Data](data/processed/sales_table_screenshot.png)](data/processed/cleaned_sales_data.csv)
+
+> Screenshot shows the cleaned dataset. Clicking opens the CSV file in GitHub.
+
+---
+
+## 📈 Predicted Sales Graph
+
+Click below to view the **predicted sales plot**:
+
+[![Predicted Sales Graph](data/processed/sales_graph_screenshot.png)](data/processed/sales_graph_screenshot.png)
+
+> Screenshot of predicted sales. To see live plots, run the Python script locally.
 
 ---
 
@@ -52,7 +63,7 @@ Sales-Predictor/
 │
 ├── src/
 │ ├── data_cleaning.py # Script for cleaning and preprocessing
-│ └── sales_prediction.py # Script for building and evaluating ML model
+│ └── sales_prediction.py # Script for training and predicting sales
 │
 ├── README.md
 └── requirements.txt
@@ -60,56 +71,37 @@ Sales-Predictor/
 
 ---
 
-## 🚀 Getting Started
+## 📥 Download Dataset
 
-1. **Clone the repository:**
+You can download the datasets for analysis:
 
-```bash
-git clone https://github.com/AkilSelot/Sales-Predictor.git
-cd Sales-Predictor
-Create a virtual environment and activate it:
+- **Processed data:** [cleaned_sales_data.csv](data/processed/cleaned_sales_data.csv)  
+- **Raw data:** [sales_data.csv](data/raw/sales_data.csv)
 
-python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate   # Mac/Linux
-Install required packages:
+> Place these in the `/data/processed/` and `/data/raw/` folders in your local repo.
 
-pip install -r requirements.txt
-🐍 Python Scripts (Clickable)
-Run Data Cleaning – cleans raw sales data and saves it to data/processed/
+---
 
-Run Sales Prediction – trains ML model and outputs predicted sales
+## 🛠 Tools & Technologies
 
-Clicking these links opens the scripts on GitHub. Users must run them locally to see results.
+- Python  
+- Pandas / NumPy  
+- Scikit-learn  
+- Matplotlib  
+- CSV datasets  
 
-📊 Cleaned Sales Data (Clickable)
-Click the image below to view the cleaned sales CSV:
+---
 
+## 💡 Notes
 
-Screenshot shows the cleaned dataset. Clicking opens the CSV as a table on GitHub.
+- Replace the CSV dataset with your own sales data for testing  
+- Scripts are modular — easy to extend or improve  
+- ML model can be swapped for other regression algorithms if needed  
+- Graphs are generated automatically in `data/processed/`  
 
-📈 Predicted Sales Graph (Clickable)
-Click the image below to see the predicted sales graph:
+---
 
+## 👤 Author
 
-Clicking opens the image. To see live plots, run the Python script locally:
-
-python src/sales_prediction.py
-🐍 Optional: Interactive Graphs
-You can create interactive plots using Plotly or Streamlit:
-
-# src/sales_prediction_interactive.py
-import pandas as pd
-import plotly.express as px
-
-df = pd.read_csv("data/processed/cleaned_sales_data.csv")
-fig = px.line(df, x='Date', y='Sales', title='Predicted Sales')
-fig.show()
-For a fully interactive experience, you can deploy it on Streamlit Cloud.
-
-💡 Notes
-Replace the CSV dataset with your own sales data for testing
-
-Python scripts are modular — easy to extend or improve
-
-ML model can be replaced with other algorithms as needed
+**Akil Selot**  
+Data Analyst  
