@@ -50,19 +50,22 @@ Sales-Predictor/
 │   └── processed/          # Cleaned/processed datasets
 │       └── cleaned_sales_data.csv
 │
-├── graphs/
-│   └── sales_plot.png      # Example output graph
+├── graphs/                 # All generated plots
+│   ├── sales_over_time.png
+│   ├── sales_histogram.png
+│   └── sales_cumulative.png
 │
 ├── src/
 │   ├── data_cleaning.py    # Script for cleaning and preprocessing
-│   └── sales_prediction.py # Script for building and evaluating ML model
+│   ├── sales_prediction.py # Script for building and evaluating ML model
+│   └── plot_all.py         # Script for generating all plots
 │
 ├── README.md
 └── requirements.txt
 
 ---
 
-## 📈 Sample Sales Data (Clickable)
+## 📊 Sample Sales Data (Clickable)
 
 You can click the link below to open the cleaned CSV file directly in GitHub:
 
@@ -78,13 +81,21 @@ Here is a preview of the dataset:
 
 ---
 
-## 📊 Example Output Graph (Clickable)
+## 📊 Example Output Graphs (Clickable)
 
-After running the prediction script, an example graph is saved here:
+After running the prediction scripts, the following graphs are saved in `graphs/`:
 
-[**View Sales Prediction Graph**](graphs/sales_plot.png)
+### 1️⃣ Sales Over Time
+[View Sales Over Time](graphs/sales_over_time.png)  
+![Sales Over Time](graphs/sales_over_time.png)
 
-![Sales Prediction Graph](graphs/sales_plot.png)
+### 2️⃣ Sales Distribution
+[View Sales Distribution](graphs/sales_histogram.png)  
+![Sales Distribution](graphs/sales_histogram.png)
+
+### 3️⃣ Cumulative Sales
+[View Cumulative Sales](graphs/sales_cumulative.png)  
+![Cumulative Sales](graphs/sales_cumulative.png)
 
 ---
 
@@ -108,17 +119,20 @@ Run Python scripts:
 Data Cleaning: cleans raw sales data and saves it to data/processed/
 
 python src\data_cleaning.py
-Sales Prediction: trains ML model and outputs predicted sales, saving graphs to graphs/
+Sales Prediction: trains ML model, outputs predicted sales, and saves graphs
 
 python src\sales_prediction.py
+Generate All Plots: creates multiple example plots (sales over time, histogram, cumulative)
+
+python src\plot_all.py
 💡 Notes
 Replace the CSV dataset with your own sales data for testing.
 
 The Python scripts are modular — you can easily improve the model or add new features.
 
-You can replace the ML model with other algorithms as needed.
-
 Example graphs are saved in graphs/ folder as PNG files.
+
+ML model can be replaced with other algorithms if needed.
 
 👤 Author
 Akil Selot
