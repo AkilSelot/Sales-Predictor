@@ -1,31 +1,67 @@
 # 🐍 Sales Predictor
 
-A Python-based project that forecasts retail sales using historical data and machine learning.  
-This project demonstrates **data cleaning, feature engineering, visualization, and predictive modeling**.
+A professional Python-based project that forecasts retail sales using historical data and machine learning.  
+
+This repository showcases a Python ML workflow for sales prediction, with cleaned datasets, modular scripts, and interactive graphs.
 
 ---
 
 ## 🔍 Project Overview
 
-The goal of this project is to:
+The goal of this project is to analyze retail sales data to:
 
-- Analyze historical retail sales data  
-- Build ML models to predict future sales trends  
+- Predict future sales trends  
 - Identify patterns in sales behavior  
+- Evaluate model performance  
 - Support data-driven business planning  
 
-This repository serves as a **portfolio example** of practical Python-based data analysis and forecasting.
+This project serves as a portfolio example of Python-based **data analysis, ML modeling, and visualization**.
 
 ---
 
 ## ✨ Key Features
 
 - Data cleaning and preprocessing with Pandas  
-- Feature engineering for better predictions  
+- Feature engineering for improved predictions  
 - Sales trend prediction using Scikit-learn  
-- Visualizations with Matplotlib  
+- Interactive visualizations with Matplotlib  
 - Modular Python scripts for easy extension  
-- Graphs saved as images for clickable previews  
+- Cleaned datasets and saved graphs for clickable previews  
+
+---
+
+## 🔴 Live Python Output
+
+The predicted sales graph is saved in the repository and clickable on GitHub:
+
+👉 [View Sales Graph](graphs/sales_plot.png)  
+
+[![Open Sales Graph](graphs/sales_plot.png)](graphs/sales_plot.png)  
+
+**Note:** The image opens a static version. For live graphs, run the Python script locally (see instructions below).
+
+---
+
+## 📈 Sample Sales Data
+
+Here is a snippet of the processed dataset:
+
+| Date       | Sales |
+|------------|-------|
+| 2025-01-01 | 100   |
+| 2025-01-02 | 115   |
+| 2025-01-03 | 108   |
+
+---
+
+## 📥 Download Dataset
+
+You can view the datasets directly in GitHub or download them:
+
+- **Processed data:** [cleaned_sales_data.csv](data/processed/cleaned_sales_data.csv)  
+- **Raw data:** [sales_data.csv](data/raw/sales_data.csv)  
+
+> **Tip:** Keep the files in `/data/processed/` and `/data/raw/` folders in your repo.
 
 ---
 
@@ -46,14 +82,16 @@ Sales-Predictor/
 │
 ├── data/
 │ ├── raw/ # Original datasets
+│ │ └── sales_data.csv
 │ └── processed/ # Cleaned/processed datasets
+│ └── cleaned_sales_data.csv
 │
 ├── src/
 │ ├── data_cleaning.py # Script for cleaning and preprocessing
 │ └── sales_prediction.py # Script for building and evaluating ML model
 │
 ├── graphs/
-│ └── sales_plot.png # Saved graph of actual vs predicted sales
+│ └── sales_plot.png # Predicted vs actual sales graph
 │
 ├── README.md
 └── requirements.txt
@@ -77,28 +115,22 @@ Install required packages:
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 🐍 Run Python Scripts
-Run Data Cleaning – cleans raw sales data and saves it to data/processed/:
+Data Cleaning – cleans raw sales data:
 
 python src\data_cleaning.py
-Run Sales Prediction – trains ML model and outputs predicted sales:
+Sales Prediction – trains ML model and saves graph:
 
 python src\sales_prediction.py
-📊 Cleaned Sales Data (Clickable)
-View the processed CSV file directly on GitHub:
-Open cleaned_sales_data.csv
-
-📈 Sales Graph (Clickable)
-A graph comparing actual vs predicted sales is saved in the graphs/ folder:
-
-
-Clicking this image in GitHub opens the graph directly.
+Open graphs/sales_plot.png to see predicted vs actual sales.
 
 💡 Notes
-You can replace the CSV dataset with your own sales data for testing
+Replace the CSV dataset with your own sales data for testing
 
-The scripts are modular — easily improve the model or add new features
+Scripts are modular — easy to extend and improve
 
-The ML model can be replaced with any regression algorithm for better results
+ML model can be replaced with other regression algorithms for experimentation
 
 👤 Author
 Akil Selot
+Python & Data Analytics Portfolio
+
