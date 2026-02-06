@@ -1,16 +1,16 @@
 # 🐍 Sales Predictor
 
-A professional Python-based project that forecasts retail sales using historical data and machine learning techniques.
-
-This project demonstrates data cleaning, transformation, visualization, and predictive modeling to support business decision-making.
+A Python-based project that forecasts retail sales using historical data and machine learning.  
+This project demonstrates **data cleaning, feature engineering, visualization, and predictive modeling**.
 
 ---
 
 ## 🔍 Project Overview
 
-The goal of this project is to analyze historical retail sales data and build models that can:
+The goal of this project is to:
 
-- Predict future sales trends  
+- Analyze historical retail sales data  
+- Build ML models to predict future sales trends  
 - Identify patterns in sales behavior  
 - Support data-driven business planning  
 
@@ -20,11 +20,11 @@ This repository serves as a **portfolio example** of practical Python-based data
 
 ## ✨ Key Features
 
-- Data cleaning and preprocessing  
-- Feature engineering  
-- Sales trend prediction  
+- Data cleaning and preprocessing with Pandas  
+- Feature engineering for better predictions  
+- Sales trend prediction using Scikit-learn  
+- Visualizations with Matplotlib  
 - Modular Python scripts for easy extension  
-- Expandable model design for future improvements  
 
 ---
 
@@ -46,10 +46,13 @@ Sales-Predictor/
 ├── data/
 │ ├── raw/ # Original datasets
 │ └── processed/ # Cleaned/processed datasets
+│ ├── cleaned_sales_data.csv
+│ ├── sales_table_screenshot.png
+│ └── sales_graph_screenshot.png
 │
 ├── src/
 │ ├── data_cleaning.py # Script for cleaning and preprocessing
-│ └── sales_prediction.py # Script for building and evaluating the model
+│ └── sales_prediction.py # Script for building and evaluating ML model
 │
 ├── README.md
 └── requirements.txt
@@ -63,8 +66,6 @@ Sales-Predictor/
 
 ```bash
 git clone https://github.com/AkilSelot/Sales-Predictor.git
-Navigate into the project folder:
-
 cd Sales-Predictor
 Create a virtual environment and activate it:
 
@@ -77,24 +78,38 @@ pip install -r requirements.txt
 🐍 Python Scripts (Clickable)
 Run Data Cleaning – cleans raw sales data and saves it to data/processed/
 
-Run Sales Prediction – trains a model and outputs predicted sales
+Run Sales Prediction – trains ML model and outputs predicted sales
 
-Clicking these links on GitHub opens the script code directly.
+Clicking these links opens the scripts on GitHub. Users must run them locally to see results.
 
 📊 Cleaned Sales Data (Clickable)
-Click the table below to view the full cleaned sales dataset in GitHub:
+Click the image below to view the cleaned sales CSV:
 
 
-✅ Screenshot is clickable — opens the CSV as a live table on GitHub.
+Screenshot shows the cleaned dataset. Clicking opens the CSV as a table on GitHub.
 
-📈 Example Output
-Cleaned data saved in data/processed/
+📈 Predicted Sales Graph (Clickable)
+Click the image below to see the predicted sales graph:
 
-Predicted sales plotted using Matplotlib
 
-Model evaluation metrics displayed in the console (e.g., MAE)
+Clicking opens the image. To see live plots, run the Python script locally:
+
+python src/sales_prediction.py
+🐍 Optional: Interactive Graphs
+You can create interactive plots using Plotly or Streamlit:
+
+# src/sales_prediction_interactive.py
+import pandas as pd
+import plotly.express as px
+
+df = pd.read_csv("data/processed/cleaned_sales_data.csv")
+fig = px.line(df, x='Date', y='Sales', title='Predicted Sales')
+fig.show()
+For a fully interactive experience, you can deploy it on Streamlit Cloud.
 
 💡 Notes
 Replace the CSV dataset with your own sales data for testing
 
 Python scripts are modular — easy to extend or improve
+
+ML model can be replaced with other algorithms as needed
